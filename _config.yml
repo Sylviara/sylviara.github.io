@@ -1,6 +1,6 @@
 # Site settings
-title: AYU's Blog
-SEOTitle: 翟雨的博客 | AYU's Blog
+title: ZHAI Yu's Blog
+SEOTitle: 翟雨的博客 | ZHAI Yu's Blog
 header-img: img/post-bg-desk.jpg
 email: zhaiyu@stu.pku.edu.cn
 description: "Every failure is leading towards success."
@@ -12,7 +12,7 @@ github_repo: "https://github.com/sylviara/sylviara.github.io.git" # you code rep
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "Goals determine what you going to be!"
-sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/avatar-by.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
@@ -23,7 +23,7 @@ zhihu_username:     zhaiyu
 github_username:    zhaiyu
 facebook_username:  zhaiyu
 jianshu_username:   nah
-#twitter_username:   qiubaiying
+#twitter_username:   aaaaa
 
 
 
