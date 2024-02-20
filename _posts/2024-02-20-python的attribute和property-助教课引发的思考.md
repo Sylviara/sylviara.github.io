@@ -16,67 +16,15 @@ tags:
 
 
 
->1. 算法反刍：基于Doccano的自动标注
+  On preparing for tomorrows' lab seminar, I encountered some issue about how can I say in English about get the property and attribute value. Then I searched and found an interesting issue that I haven't solved long long time ago: property and attribute in class defination in python
 
 
-#### 1. 算法反刍：基于Doccano的自动标注
+So what is attribute? 
 
-    doccano平台有AutoLabeling功能，直接调用自己的实体识别API，可以实现语料预标注，标注后的语料又可以作用于算法训练，从此完成算法反刍。
+> They are important concepts of object-oriented programming  which allows object have charateristic and behaviors. The answer to my question is that attributes and method can be **"accessed"** using the dot ('.') operator.
 
-步骤如下：
+What is property?
 
-1. 首先，新建一个doccano项目（此步省略），管理员身份进入settings界面，点击`AutoLabeling`，新建一个`template`，并选择Custom REST Request。
+> It's an @ method in class defination which you could use to change static attribute into a method and setting setter and getter to the attribute so that the code wil be more robust.
 
-![step1](DailyLogISTIC/dli-20221128-1.png "doccano自动标注步骤1")
-
-    REST 的全称是 Resource Representational State Transfer ，直白地翻译过来就是 “资源”在网络传输中以某种“表现形式”进行“状态转移” 。涉及的概念如下：
-    资源（Resource） ：可以把真实的对象数据称为资源。一个资源既可以是一个集合，也可以是单个个体。
-    URI（统一资源标识符）与之对应，如果需要获取这个资源，访问这个 URI 就可以了。
-    表现形式（Representational）：“资源"是一种信息实体，它可以有多种外在表现形式。把"资源"具体呈现出来的形式比如 json，xml，image,txt 等等叫做它的"表现层/表现形式”。
-    状态转移（State Transfer） ： REST 中的状态转移更多地描述的服务器端资源的状态，比如通过增删改查（通过 HTTP 动词实现）引起资源状态的改变。
-    总结RESTful架构：每一个 URI 代表一种资源；客户端和服务器之间，传递资源的某种表现形式比如 json，xml，image,txt 等等；客户端通过特定的 HTTP 动词，对服务器端资源进行操作，实现"表现层状态转化"。
-
-2. 输入相关算法链接配置，并测试。配置包括：
-
-- URL：使用flask或FastAPI规定的算法接口地址
-- Method：请求方法，一般为`POST`或`GET`
-- Headers：默认是`application/json`
-- Body：key为参数，value格式如果是String，则写成{{ text }}
-
-![step2](https://github.com/Sylviara/sylviara.github.io/blob/master/_posts/DailyLogISTIC/dli-20221128-2.png "doccano自动标注步骤2：配置自动标注算法接口地址和请求方式")
-
-![step2](https://github.com/Sylviara/sylviara.github.io/blob/master/_posts/DailyLogISTIC/dli-20221128-3.png "doccano自动标注步骤2：配置自动标注算法接口参数和格式")
-
--  测试：sampleText里填入测试用的para内容，测试成功（Response正常）后即将进入下一步
-（这里前端设计有`bug`，进入下一步后不能反复测试。）
-
-![step2](https://github.com/Sylviara/sylviara.github.io/blob/master/_posts/DailyLogISTIC/dli-20221128-4.png "doccano自动标注步骤2：配置自动标注算法接口参数和格式")
-
-3. 下一步是配置Jinja2模板(如下)，以转换接口返回的数据为doccano的数据格式，给平台数据对接与标注背书。模板内容：
-
-        [
-            {% for entity in input %}
-            {
-            "start_offset": {{ entity.start_offset }},
-            "end_offset": {{ entity.end_offset}},
-            "label": "{{ entity.label }}"
-            }
-            {% if not loop.last %},{% endif %}
-            {% endfor %}
-        ]
-   值得注意的是，不同格式转换对应不同jinja模板，建议直接在python中修改格式，如此在这一步就不用修改jinja模板了。
-
-![step3](https://github.com/Sylviara/sylviara.github.io/blob/master/_posts/DailyLogISTIC/dli-20221128-5.png "doccano自动标注步骤3：配置自动标注算法接口参数和格式")
-
-4. 最后一步：配置标签集，完成自动标注算法接口的配置。
-
-![step4](https://github.com/Sylviara/sylviara.github.io/blob/master/_posts/DailyLogISTIC/dli-20221128-6.png "doccano自动标注步骤4：标签集配置")
-
-5. 自动标注应用：
-- 开启自动标注按钮，同时注意只有进入下一条数据时才会自动开始标注，因此点击开始标注后需要点击下一条，再回到原来的条目，就可以两条都完成标注。
-- 自动标注结果几乎和接口请求过程速度一致，因此如果段落较长，请耐心等待。
-
-![step5](https://github.com/Sylviara/sylviara.github.io/blob/master/_posts/DailyLogISTIC/dli-20221128-7.png "doccano自动标注步骤5：自动标注应用！")
-
-![step5](https://github.com/Sylviara/sylviara.github.io/blob/master/_posts/DailyLogISTIC/dli-20221128-8.png "doccano自动标注步骤5：BERT命名实体识别模型自动标注结果")
-
+![csdn](https://cdn.jsdelivr.net/gh/sylviara/sylviara.github.io@master/img/20240220231113.png "https://blog.csdn.net/qq_41035283/article/details/124551838")
