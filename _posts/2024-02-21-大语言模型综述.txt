@@ -1,0 +1,30 @@
+
+
+下列信息来自[AI for Science](https://medium.com/@AI_for_Science/ai-for-science-in-2023-a-community-primer-d2c2db37e9a7#849a)在2023年的技术报告，学术引用格式如下：
+
+> Stevens, R. et al. Ai for science. Tech. Rep., Argonne National Lab.(ANL), Argonne, IL (United States) (2020). --inspired from the 1st paper of "A review of some techniques for inclusion of domain-knowledge into deep neural networks"
+
+
+
+## 医学多模态基础模型
+
+随着大语言模型的进展，[Moor 等人。](https://www.nature.com/articles/s41586-023-05881-4)提出了一种通用医学人工智能（GMAI），它可以解释多模态数据，例如成像、电子健康记录、实验室结果、基因组学、图表或医学文本。GMAI 以自我监督的方式对大型、多样化、多模态数据进行了预训练，可以进行多样化的医疗应用。
+
+此外，[辛格尔等人。](https://www.nature.com/articles/s41586-023-06291-2)策划了医学领域的大规模问答数据集，并提出了基于[PaLM](https://arxiv.org/abs/2204.02311)（谷歌的大语言模型）的医学领域大语言模型，也称为Med-PaLM，这是第一个超过通过阈值的AI模型（ >60%）在美国医师执照考试（USMLE）中。几个月后，同一组作者提出了 Med-PaLM 的第二个版本（[Med-PaLM 2](https://arxiv.org/abs/2305.09617)）。如下图所示，Med-PaLM 2 实现了一个值得注意的里程碑（86.5% 对比 67.2% (Med-PaLM)），成为第一个在回答 USMLE 式问题方面达到与人类专家相当的熟练程度的水平。医生们注意到该模型对消费者医疗查询的长格式答案有了显着增强。
+
+带标签的图像-文本对也为医学成像中的多模态学习提供了令人兴奋的机会。例如，Huang 等人通过对临床医生在医学 Twitter 等公共论坛上共享的图像文本对进行对比学习，开发了病理语言图像基础[模型](https://www.nature.com/articles/s41591-023-02504-3)。
+
+## ## Multi-modal foundation models for medicine
+
+Following the progress of the large language model,
+[Moor et al.](https://www.nature.com/articles/s41586-023-05881-4) propose a generalist medical AI (GMAI), which can interpret multi-modal data such as imaging, electronic health records, laboratory results, genomics, graphs, or medical text. GMAI is pre-trained on large, diverse, multimodal data in a self-supervised manner and can conduct diverse medical applications.
+
+Also, [Singhal et al.](https://www.nature.com/articles/s41586-023-06291-2) curates a large-scale question-answer dataset in the medical domain and proposes a medical domain large language model based on [PaLM](https://arxiv.org/abs/2204.02311) (Google’s large language models), also known as Med-PaLM, which is the first AI model that exceeds the pass threshold (>60%) in the U.S. Medical Licensing Examination (USMLE). After a couple of months, the same group of authors proposed the second version of Med-PaLM ([Med-PaLM 2](https://arxiv.org/abs/2305.09617)). As shown in the figure below, Med-PaLM 2 achieved a noteworthy milestone (86.5% versus 67.2% (Med-PaLM)) by becoming the first to attain a level of proficiency comparable to that of human experts in responding to USMLE-style questions. Physicians noted a significant enhancement in the model’s long-form answers to consumer medical queries.
+
+
+
+
+
+# # Medical LLM extended
+
+The benchmark used in the study, MultilMed0A, comprises six open source datasets and an additional one on consumer medical questions, HealthsearchQA which we newly introduce. HealthsearchOA dataset is provided as a supplementary file.  [MedQA](https:/github.com/ind11/MedOA), [MedMCQA](https:/medmcga.github.io),[PubMedQA](https:/pubmedga.github.io), [LiveQA](https:/github.com/abachalLiveQA_MedicalTask_TREC2017), [MedicationQA](https://github.com/abachaa/Medication _QA_MedInfo2019), [MMLU](https://huggingface.co/datasets/hendrycks_test).
