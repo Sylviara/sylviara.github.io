@@ -2,7 +2,7 @@
 title: ZHAI YU
 SEOTitle: 翟雨的网站 | ZHAI YU's Website
 header-img: img/post-bg-desk.jpg
-email: zhaiyu@stu.pku.edu.cn
+email: tonyanayu@gmail.com/tonyayu.zhai@connect.polyu.hk
 description: "Battles are lost in the same spirit in which they are won."
 keyword: "北京大学, 翟雨, 计算语言学, 语料库语言学, 翻译, 译者风格分析"
 url: "http://sylviara.github.io"          # your host, for absolute URL
@@ -96,16 +96,16 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "WY",
-        href: "http://zhengwuyang.com"
-    },{
-        title: "简书·BY",
-        href: "http://www.jianshu.com/u/e71990ada2fd"
-    },{
-        title: "Apple",
-        href: "https://apple.com"
-    },{
-        title: "Apple Developer",
-        href: "https://developer.apple.com/"
-    }
+        title: "YYH",
+        href: "http://yangyiheng.com"
+    # },{
+    #     title: "简书·BY",
+    #     href: "http://www.jianshu.com/u/e71990ada2fd"
+    # },{
+    #     title: "Apple",
+    #     href: "https://apple.com"
+    # },{
+    #     title: "Apple Developer",
+    #     href: "https://developer.apple.com/"
+    # }
 ]
