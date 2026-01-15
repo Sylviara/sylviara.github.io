@@ -2,7 +2,8 @@
 
 ![image-20240412184900032](https://cdn.jsdelivr.net/gh/sylviara/sylviara.github.io@master/img/image-20240412184900032.png)
 
-min distanc btwn augmntd positive samples and sam class sampls
+min distance between augmented positive samples and same class samples
 
-max distanc btwn ngativ sampls and augmntd positiv+sim_class+sampl_anchor
+max distance between negative samples and augmented positive + same_class + sample_anchor
+
 

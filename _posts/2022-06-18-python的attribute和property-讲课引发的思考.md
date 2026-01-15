@@ -2,7 +2,7 @@
 layout:     post
 title:      Python Property 和 Atrribute的区别
 subtitle:   用英语怎么说访问attribute引发的chain of thought
-date:       2024-02-20
+date:       2024-02-18
 co-author:     AYU
 header-img: img/post-bg-2015.jpg
 catalog: true
