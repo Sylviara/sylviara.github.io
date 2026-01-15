@@ -19,9 +19,10 @@ header-img: "img/about-BY-gentle.jpg.jpg"
     
     <p>你好，我是<strong>翟雨(Zhai Yu)</strong>。我是香港理工大学在读博士研究生，曾就读于北京大学软件与微电子学院，研究领域为本体、知识工程、自然语言处理、大语言模型训练与推理。</p>
     
-    <p>工作、学习之余，我还是一个猫咪与美食爱好者，热衷游泳和骑行。</p>
+    <p>工作、学习之余，我还是一个猫咪与美食爱好者，热衷绘画、游泳和骑行。</p>
        
-    <img src="https://cdn.jsdelivr.net/gh/sylviara/sylviara.github.io@master/img/QQ20221011131439.png" alt=''>
+    <!-- <img src="https://cdn.jsdelivr.net/gh/sylviara/sylviara.github.io@master/img/QQ20221011131439.png" alt=''> -->
+	<img src="/img/mycv.png">
        
     <p></p>
     
