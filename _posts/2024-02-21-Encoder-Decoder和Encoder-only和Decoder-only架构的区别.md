@@ -2,7 +2,7 @@
 layout:     post
 title:      Encoder-Decoder、Encoder-only和Decoder-only架构的区别
 subtitle:   大语言模型底层架构系列
-date:       2023-12-22
+date:       2024-02-21
 co-author:     AYU
 header-img: img/post-bg-2015.jpg
 catalog: true
